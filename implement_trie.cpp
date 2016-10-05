@@ -1,6 +1,13 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using std::vector;
+using std::string;
+
 class TrieNode {
 public:
-    // Initialize your data structure here.
+    // Initialize data structure here.
     char val;
     vector<TrieNode*> neighbors;
     TrieNode()=default;
@@ -111,7 +118,3 @@ private:
     TrieNode* root;
 };
 
-// Your Trie object will be instantiated and called as such:
-// Trie trie;
-// trie.insert("somestring");
-// trie.search("key");
